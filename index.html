@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Insertion Sort</h1>
+
+        <div class="inputs-container">
+            <div class="input-group array-size">
+                <div class="input-label">Array Size:</div>
+                <select name="array_size" id="array-size-input">
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="input-group array-layout">
+                <div class="input-label">Array Layout:</div>
+                <select name="array_layout" id="array-layout-input">
+                    <option value="bar" selected>Bar</option>
+                    <option value="array">Array</option>
+                </select>
+            </div>
+            <div class="input-group sort-order">
+                <div class="input-label">Sort Order:</div>
+                <select name="sort_order" id="sort-order-input">
+                    <option value="ascending" selected>Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+            </div>
+            <div class="input-group array-values">
+                <div class="input-label">Array Values:</div>
+                <input type="text" name="array_values" id="array-values-input"
+                    placeholder="Type multiple array values with comma seperated" />
+            </div>
+            <div class="button-container">
+                <button class="run-btn" id="run-button">Run</button>
+                <button class="reset-btn" id="reset-button">Reset</button>
+            </div>
+        </div>
+
+        <div class="visualize-container">
+            <div class="visualize-title">Visualize</div>
+            <div id="visualize-container">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
